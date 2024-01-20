@@ -1,17 +1,14 @@
 meme_sozlugu = {
-    "CRINGE": "Garip ya da utandırıcı bir şey",
-    "LOL": "Komik bir şeye verilen cevap",
-    "ROFL": "Bir şakaya karşılık cevap",
-    "SHEESH": "Onaylamamak",
-    "CREEPY": "Korkunç",
-    "AGGRO": "Agresifleşmek/Sinirlenmek"
-}
+            "CRINGE": "Garip ya da utandırıcı bir şey",
+            "LOL": "Komik bir şeye verilen cevap",
+            "ROFL": "ROFL bir şakaya karşılıktır, LOL gibidir",
+            "SHEESH":  "Onaylamamak",
+            "CREEPY":  "Korkunç"
+            }
 
-word = input("Anlamadığınız bir kelime yazın: ")
+word = input("Anlamadığınız bir kelime yazın (hepsini büyük harflerle yazın!): ")
 
-# Kullanıcının girdiği kelimeyi büyük harfle kontrol et
-if word.upper() in meme_sozlugu.keys():
-    print(meme_sozlugu[word.upper()])
+if word in meme_sozlugu.keys():
+    print(meme_sozlugu[word])
 else:
-    print("Kelime sözlükte yok, eklenecek")
-    # Kelime eşleşmiyorsa ne yapmalıyız? Buraya ekleyebilirsiniz.
+    print("Henüz bu kelimeye sahip değiliz... Ama üzerinde çalışıyoruz!")
